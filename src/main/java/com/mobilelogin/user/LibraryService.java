@@ -98,50 +98,6 @@ public List<Book> searchForBooks(String title,String category, String subject,St
 	return bookrepo.getbooksLike(title, category, subject, author);
 }
 	
-//	public List<Book> searchbooks(String title, String category, String subject, String author)
-//	{
-////		 TODO Auto-generated method stub
-//	  List<Book> list1 = new ArrayList<>(); 
-//	    String s1="";
-//	    if (title!=s1 )
-//	    {
-//	    	list1=(List<Book>) bookrepo.findAllByT(title);
-//	    }
-//	    if (category!=s1 && subject!=s1 && author!=s1)
-//	    {
-//	    	list1=(List<Book>)bookrepo.findAllByCategorySubjectAuthor(category, subject, author);
-//	    }
-//	    else if(category!=s1 && subject!=s1 && author == s1)
-//	    {
-//	    	list1=(List<Book>)bookrepo.findAllByCategorySubject(category, subject);
-//	    }
-//	    else if(subject!=s1 && author!=s1 && category == s1)
-//	    {
-//	    	list1=(List<Book>)bookrepo.findAllBySubjectAuthor(subject, author);
-//	    }
-//	    if(category!=s1 && subject == s1 && author!=s1)
-//	    {
-//	    	list1=(List<Book>)bookrepo.findAllByCategoryAuthor(category, author);
-//	    }
-//	    if(category!=s1 && subject == s1 && author == s1)
-//	    {
-//	    	list1=(List<Book>)bookrepo.findAllByC(category);
-//	    }
-//	    if(category == s1 && subject != s1 && author == s1)
-//	    {
-//	    	list1=(List<Book>)bookrepo.findAllByS(subject);
-//	    }
-//	    if(category == s1 && subject == s1 && author != s1)
-//	    {
-//	    	list1=(List<Book>)bookrepo.findAllByA(author);
-//	    }
-//	    else
-//	    {
-//	    	list1=null;
-//	    }
-//		return list1;
-//	}
-
 	public Book rentBook(int bookId) 
 	{
 		// TODO Auto-generated method stub
@@ -167,13 +123,3 @@ public List<Book> searchForBooks(String title,String category, String subject,St
 	}
 			
 
-//	public void logout extends Http() 
-//	{
-//		// TODO Auto-generated method stub
-//		
-//	}
-//    public List<Book> search(String title)
-//    {   
-//    	return bookrepo.search(title);
-//    }
-}
