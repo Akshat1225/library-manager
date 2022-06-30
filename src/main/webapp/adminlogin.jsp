@@ -11,7 +11,6 @@
 	<br>
 	<form action="add" method="post">
 		Admin wants to Add Entry<br>
-		<!--  Enter BookId <input type="text"name="bookId"><br>  -->
 		 Title <input type="text"name="title"><br> 
 		 Category <input type="text"name="category"><br> 
 		 Subject <input type="text"name="subject"><br> 
