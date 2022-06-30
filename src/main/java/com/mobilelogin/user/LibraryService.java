@@ -64,18 +64,25 @@ public class LibraryService {
 		// TODO Auto-generated method stub
 		Book book = bookrepo.getById(bookId);
 		System.out.println(book);
-		String s1="";
-		if(title==s1)
+		if(title.isEmpty())
 		{book.getTitle();}
 		else
 		{book.setTitle(title);}
-		if(category!=s1)
+		if(category.isEmpty())
+		{book.getCategory();}
+		else
 		{book.setCategory(category);}
-		if(subject!=s1)
+		if(subject.isEmpty())
+		{book.getSubject();}
+		else
 		{book.setSubject(subject);}
-		if(description!=s1)
+		if(description.isEmpty())
+		{book.getDescription();}
+		else
 		{book.setDescription(description);}
-		if(author!=s1)
+		if(author.isEmpty())
+		{book.getAuthor();}
+		else
 		{book.setAuthor(author);}
 		bookrepo.save(book);
 		return book;
