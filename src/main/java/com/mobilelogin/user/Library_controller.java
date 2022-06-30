@@ -82,8 +82,6 @@ public class Library_controller
 	{
 		System.out.println("what is this?");
 		ModelAndView mv2 = new ModelAndView("adminlogin.jsp");
-//		Book book = new Book(title, category, subject, description, author, stock);
-//		System.out.println(book);
 		Book book=libraryService.saveadd(title, category, subject, description, author, stock);
 		System.out.println(book);
 		return mv2;
@@ -92,7 +90,6 @@ public class Library_controller
 	@PostMapping("/signout")
 	public String Logout(HttpServletRequest req)
 	{   
-//	    libraryService.logout();
 		req.getSession().invalidate();
 		return "home.jsp";
 	}
@@ -102,12 +99,6 @@ public class Library_controller
 		libraryService.savestock(bookId,stock);
 	    return "adminlogin.jsp";	
 	}
-//	@PostMapping("/search")
-//	public String searchForBooks(@RequestParam String title,String category, String subject, String author)
-//	{
-//		libraryService.searchbooks(title,category,subject,author);
-//		return "books.jsp";
-//	}
 	@PostMapping("/search")
 	public String searchForBooks(@RequestParam String title,String category, String subject,String author,ModelMap model,Model model1)
 	{   List<Book> list1= libraryService.searchForBooks(title, category, subject, author);
